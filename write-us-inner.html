@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обратная связь - Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="header-top clearfix">
+				<figure class="logo">
+					<a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nёrds"></a>
+				</figure>
+				<div class="cart"><a class="icon-basket" href="#">Корзина</a></div>
+				<nav class="main-navigation">
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+				<input type="radio" id="btn-2" name="toggle">
+				<input type="radio" id="btn-3" name="toggle">
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
+				<div class="slides">
+					<div class="slide">
+						<div class="slide-text">
+							<h2 class="title">Долго, дорого,  скрупулезно.</h2>
+							<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+							<a href="#" class="btn">Узнать больше</a>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-text">
+							<h2 class="title">Любите ли вы математику, как любим ее мы?</h2>
+							<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+							<a href="#" class="btn">Узнать больше</a>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-text">
+							<h2 class="title">Только наркотики, только хардкор!</h2>
+							<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+							<a href="#" class="btn">Узнать больше</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</header>
+	<main class="inner-main">
+		<div class="modal-content">
+			<form action="#" class="feeback-form" method="post">
+				<div class="user-block">
+					<div class="half-width">
+						<label for="name">Ваше имя:</label>
+						<input name="your-name" id="name" type="text" placeholder="Представьтесь, пожалуйста" required>
+					</div>
+					<div class="half-width">
+						<label for="email">Ваш e-mail:</label>
+						<input type="text" name="email" id="email" placeholder="Для отправки ответа" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+					</div>
+				</div>
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+				<input type="submit" class="btn" value="Отправить">
+			</form>
+		</div>
+	</main>	
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<div class="footer-social">
+				<a href="#" class="social-btn icon-vk"></a>
+				<a href="#" class="social-btn icon-facebook"></a>
+				<a href="#" class="social-btn icon-instagramm"></a>
+			</div>
+			<div class="join-us">
+				<h2 class="title">Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATOFb0WJSHyMrWKZK1y3-yMxJJGABIViQ&callback=initMap"
+	async defer></script>
+</body>
+</html>
